@@ -1,22 +1,37 @@
 body{
-    background:#6643b5;
+    background:#753188;
     color: white;
     font-family: 'Lato', sans-serif;
-    
-
 }
-h1{
+/* h1{
     background:#430f58;
-    color: tomato;
+    color: yellowgreen;
     font: 400;
-    border-radius: 5px;
     text-align: center;
-
     padding: 15px;
 
-}
+} */
 h1:hover{
+    color: tomato;
+}
+
+.redes-sociales{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 30px;
+    background:#430f58;
     color: yellowgreen;
+    border-radius: 5px;
+
+}
+
+.logos{
+    display: flex;
+    flex-wrap: nowrap;
+    height:70px;
+    
+    
 }
 .tabla{
     background:#430f58;
@@ -24,10 +39,22 @@ h1:hover{
     text-align: center;
     border-radius: 5px;
     margin-top: 55px;
-    margin-left: 450px;
+    margin-left: 480px;
     padding: 5px;
-   
+    border: 10px;
+    border-color: yellow;
 
+}
+
+a{
+
+    color: yellowgreen;
+    text-decoration: none;
+    font-weight:400 ;
+
+}
+a:hover{
+color: tomato;
 }
 
 label{
@@ -38,9 +65,11 @@ label{
 }
 
 footer{
+    
     background:#430f58;
-    color: tomato;
+    color: yellowgreen;
     font: 300;
     text-align: center;
-    border-radius: 5px;  
+    border-radius: 5px;
+    margin-top: 420px;  
 }
