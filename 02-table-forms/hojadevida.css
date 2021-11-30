@@ -6,10 +6,41 @@ body{
 
 }
 h1{
+    background:#430f58;
     color: tomato;
     font: 400;
+    border-radius: 5px;
+    text-align: center;
+
+    padding: 15px;
+
+}
+h1:hover{
+    color: yellowgreen;
 }
 .tabla{
     background:#430f58;
     font: 300;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 55px;
+    margin-left: 450px;
+    padding: 5px;
+   
+
+}
+
+label{
+    background:#430f58;
+    font: 300;
+    text-align: center;
+    border-radius: 5px;
+}
+
+footer{
+    background:#430f58;
+    color: tomato;
+    font: 300;
+    text-align: center;
+    border-radius: 5px;  
 }
