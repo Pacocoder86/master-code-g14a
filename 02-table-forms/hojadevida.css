@@ -3,14 +3,14 @@ body{
     color: white;
     font-family: 'Lato', sans-serif;
 }
-/* h1{
+ h1{
     background:#430f58;
     color: yellowgreen;
     font: 400;
     text-align: center;
-    padding: 15px;
+    padding: 5px;
 
-} */
+}
 h1:hover{
     color: tomato;
 }
@@ -40,7 +40,7 @@ h1:hover{
     text-align: center;
     border-radius: 5px;
     margin-top: 55px;
-    margin-left: 480px;
+    margin-left: 530px;
     padding: 5px;
     border: 10px;
     border-color: yellow;
