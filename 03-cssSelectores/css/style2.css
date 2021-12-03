@@ -1,11 +1,12 @@
 body{
-    font-size: 50px;
+    background-color: #67babdea;
+    font-size: 18px;
     font-family: 'Nunito', sans-serif;
     margin: 0;
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
-    color: #4a9b9b;
+    color: #596666;
 }
 .imagen{
     height: 300px;
@@ -25,3 +26,11 @@ h1, p, div, nav{
 div{
     border: 1px solid #a34343;
 }
+ul li{
+    color: #e24b41;
+}
+ul li:nth-child(even){
+    font-style: italic;
+    color: #160c0c;
+}
+/* even pares - odd impares */
