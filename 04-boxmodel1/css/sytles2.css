@@ -1,0 +1,31 @@
+
+body{
+    margin: 0;
+}
+header{
+    background-color:#ffa500;
+    height: 10vh;
+}
+aside{
+    background-color: #008000;
+    float: left;
+    height: 80vh;
+    width: 20%;
+}
+main{
+    background-color:#0000ff;
+    float: right;
+    height: 80vh;
+    width: 80%;
+}
+footer{
+    background-color:#800080;
+    bottom: 0;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+}
+
+/*  width 100% unidades relativas, el % se puede aplicar a imagenes */
+
+/* Unidades relativs vh (view height) vw */
