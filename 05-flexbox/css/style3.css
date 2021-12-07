@@ -1,0 +1,43 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+header {
+    align-items: center ;
+    background: #ff4081;
+    display: flex;
+    justify-content: space-between;
+    padding:0px 20px ;
+}
+
+h1, nav {
+    display: inline-block;
+}
+h1, nav a{
+    color: #fff;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+width: 18%;
+
+}
+nav a{
+    
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 20px 5px;
+
+}
+
+nav a:hover{
+    background: #f48fb1;
+}

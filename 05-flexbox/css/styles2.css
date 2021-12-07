@@ -1,0 +1,40 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+header{
+    align-items: center;
+    background-color: #536dfe;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+h1, nav{
+    display: inline-block;
+}
+h1, nav a{
+    color: #fff;
+}
+h1{
+    font-size: 1.5rem;
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between; 
+    width: 35%;
+    /* Puedes usar las propiedades para el ejex y el y en un solo display */
+
+}
+nav a{
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px 15px;
+
+}
+nav a:hover{
+    background:#90caf9;
+}
