@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)https://s0.2mdn.net/sadbundle/14448853734801716338/fb_creators_levelup_mexico_728x90/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="ad.size" content="width=728,height=90">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Facebook Gaming 728x90</title>
+		<link href="./main(1).css" rel="stylesheet">
+
+		<script type="text/javascript">
+			var clickTag = "https://www.google.com";
+		</script>
+	<script type="text/javascript">
+    
+  (function() {
+    var MAX_URL_PARAM_LENGTH = 34;
+    var CLICK_X_URL_KEY = 'nx';
+    var CLICK_Y_URL_KEY = 'ny';
+    var CREATIVE_DIMENSIONS_KEY = 'dim';
+    var AD_URL_PARAM = '&adurl=';
+
+    var relegateNavigation = '';
+    var urlParamMap = {};
+
+    urlParamMap[CLICK_X_URL_KEY] = null;
+    urlParamMap[CLICK_Y_URL_KEY] = null;
+    urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+    var handleClickTagMessage = function(e) {
+      try {
+        var eventData = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+      if (eventData.isInitClickTag) {
+        if (eventData.clickTags) {
+          for (var i = 0; i < eventData.clickTags.length; i++) {
+            var clkTag = eventData.clickTags[i];
+            window[clkTag.name] = clkTag.url;
+          }
+        } else if (eventData.clickTag) {
+          window.clickTag = eventData.clickTag;
+        }
+        relegateNavigation = eventData.relegateNavigation;
+      }
+    };
+
+    var storeClickCoordinates = function(e) {
+      urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+      urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+    };
+
+    var getCreativeDimensions = function() {
+      return window.innerWidth + 'x' + window.innerHeight;
+    }
+
+    var getExitClickParams = function(e) {
+      urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+      var exitParams = '';
+      for (var key in urlParamMap) {
+        exitParams += '&' + key + '=';
+        if (urlParamMap[key] !== null) {
+          exitParams += urlParamMap[key];
+        }
+      }
+      return exitParams;
+    }
+
+    var appendExitClickParams = function(url) {
+      var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+      var paramsToBeAdded = getExitClickParams();
+      if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+        url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+          url.substr(adUrlIndex);
+      };
+      return url;
+    };
+
+    if (open.call) {
+      window.open = function(open) {
+        return function(url, name, features) {
+          url = appendExitClickParams(url);
+          if (relegateNavigation === 'parent') {
+            var message = {'clickTag': url, 'isPostClickTag': true};
+            parent.postMessage(JSON.stringify(message), '*');
+          } else {
+            var args = [url, name];
+            if (features) {
+              args.push(features);
+            }
+            open.apply(window, args);
+          }
+        };
+      }(window.open);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener(
+          'message', handleClickTagMessage, false);
+      window.addEventListener('mousedown', storeClickCoordinates, true);
+    } else {
+      window.attachEvent('onmessage', handleClickTagMessage);
+    }
+  })();
+    
+  </script></head>
+	<body>
+		<a id="myAdLink" href="javascript:void(window.open(window.clickTag))">	
+		<div id="border"></div>			
+			<div id="myAd">
+				<div class="myAd_Img" id="back" style="transform: matrix(1, 0, 0, 1, 0, 540);"></div>
+				<div id="img01" style="visibility: inherit; opacity: 1; transform: matrix(0.97815, -0.20791, 0.20791, 0.97815, 0, 120);"></div>
+				<div id="img02" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 120);"></div>
+				<div id="img03" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 120);"></div>
+				<div id="star01" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 120);"></div>
+				<div id="star02" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 120);"></div>
+				<div id="star03" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 120);"></div>
+				<div id="sparkle01" style="visibility: inherit; opacity: 0.942282; transform: translate3d(0px, 0px, 0px) scale(1.13651, 1.13651);"></div>
+				<div id="sparkle02" style="visibility: inherit; opacity: 0.985955; transform: translate3d(0px, 0px, 0px) scale(1.18455, 1.18455);"></div>
+				<div id="img04" style="transform: translate3d(0px, 0.705px, 0px) scale(0.54, 0.54); visibility: inherit; opacity: 1;">
+					<div id="lines_mask" style="visibility: inherit; opacity: 1;">
+						<div id="lines" style="transform: matrix(1, 0, 0, 1, 0, -170); visibility: inherit; opacity: 1;"></div>
+					</div>
+					<div id="left_wing" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+					<div id="right_wing" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+					<div id="shield_back" style="visibility: inherit; opacity: 1;"></div>
+					<div id="trofy_mask">
+						<div id="trofy" style="visibility: inherit; opacity: 1; transform: matrix(0.70711, -0.7071, 0.7071, 0.70711, 0, 0); filter: blur(0px);"></div>
+					</div>
+					<div id="mask" style="display: block; transform-origin: 50% 50% 0px; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+						<div id="shield" style="display: block; transform-origin: 50% 50% 0px; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+					</div>
+					<div id="ball" style="transform: matrix(1, 0, 0, 1, 0, 0); visibility: inherit; opacity: 1;"></div>
+				</div>
+				<div id="copy01" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 90);"></div>
+				<div id="copy02" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 90);"></div>
+				<div id="copy03" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 90);"></div>
+				<div id="copy04" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+				<div id="cta" style="visibility: inherit; opacity: 1; background-color: rgb(255, 3, 142);">
+					<div id="cta_copy01" style="visibility: hidden; opacity: 0;"></div>
+					<div id="cta_copy02" style="visibility: inherit; opacity: 1;"></div>
+					<div id="shine" class="shine" style="transform: matrix(1, 0, 0, 1, 230, 0);"></div>					
+				</div>
+				<div id="logo" style="visibility: inherit; opacity: 1;"></div>	
+			</div>
+		</a>
+		<script src="./TweenMax.min.js.descarga"></script>
+		<script type="text/javascript">
+			var isIOS = (/iPhone|iPad|iPod/i).test(navigator.userAgent);
+			var blurElement = {a:30};		
+			function init() {
+				seq01();
+
+			}
+
+			function seq01() {
+				var	twnDelay = .3;
+				TweenMax.set([logo, cta, copy01, img01], {autoAlpha:1});	
+			    TweenMax.delayedCall(twnDelay, bounceObject, [img01]);
+			    TweenMax.delayedCall(twnDelay, activateRollOver);
+			    twnDelay+=1.2;
+			    TweenMax.delayedCall(twnDelay, seq02);			
+			}
+			function seq02() {
+				var	twnDelay = 0;
+				TweenMax.set([img02, copy02], {autoAlpha:1});
+				TweenMax.to(copy01, .5, {y:90, ease:Power3.easeOut, delay:twnDelay});
+				TweenMax.to(img01, .7, {y:120, ease:Power3.easeOut, delay:twnDelay});
+				TweenMax.to(back, 2, {y:180, ease:Power3.easeOut, delay:twnDelay});			
+				twnDelay+=.1;
+				TweenMax.from(copy02, .7, {y:-90, ease:Power3.easeOut,  delay:twnDelay});
+				twnDelay+=.1;
+				TweenMax.from(img02, .7, {y:-120, ease:Power3.easeOut,  delay:twnDelay});
+				twnDelay+=.7;
+				TweenMax.delayedCall(twnDelay, bounceObject, [img02]);
+ 				twnDelay+=2;
+			    TweenMax.delayedCall(twnDelay, seq03);
+			    TweenMax.delayedCall(twnDelay, killTweens, [img01]);
+			}
+
+			function seq03() {
+				var	twnDelay = 0;
+				TweenMax.set([img03, copy03, star01, star02, star03], {autoAlpha:1});
+				TweenMax.to(copy02, .5, {y:90, ease:Power3.easeOut, delay:twnDelay});
+				TweenMax.to(img02, .7, {y:120, ease:Power3.easeOut, delay:twnDelay});
+				TweenMax.to(back, 2, {y:360, ease:Power3.easeOut, delay:twnDelay});
+				twnDelay+=.1;
+				TweenMax.from(copy03, .7, {y:-90, ease:Power3.easeOut,  delay:twnDelay});
+				twnDelay+=.1;
+				TweenMax.from([img03, star01, star02, star03], .7, {y:-90, ease:Power3.easeOut,  delay:twnDelay});
+				twnDelay+=.7;
+				TweenMax.delayedCall(twnDelay, bounceObject, [img03]);
+ 				twnDelay+=2;
+			    TweenMax.delayedCall(twnDelay, seq04);
+			    TweenMax.delayedCall(twnDelay, killTweens, [img02]);
+			}
+			function seq04() {
+				var	twnDelay = 0;
+				TweenMax.set(img04, {scale:.54});
+				TweenMax.to(copy03, .5, {y:90, ease:Power3.easeOut, delay:twnDelay});
+				TweenMax.set([mask, shield], {autoAlpha:1, transformOrigin:"50% 50%", display:'block'});
+				TweenMax.set([trofy, lines_mask, img04, copy04, left_wing, right_wing], {autoAlpha:1});
+				TweenMax.to([img03, star01, star02, star03], .7, {y:120, ease:Power3.easeOut, delay:twnDelay});
+				TweenMax.to(back, 2, {y:540, ease:Power3.easeOut, delay:twnDelay});
+				TweenMax.to(cta, 1, {backgroundColor:'#ff038e', delay:twnDelay});
+				TweenMax.to(cta_copy01, 1, {autoAlpha:0, delay:twnDelay});
+				TweenMax.to(cta_copy02, 1, {autoAlpha:1, delay:twnDelay});
+				twnDelay+=.1;
+				TweenMax.from(copy04, .7, {y:-90, ease:Power3.easeOut,  delay:twnDelay});
+				twnDelay+=.1;
+				TweenMax.to(ball, .4, {autoAlpha:1, delay:twnDelay, overwrite: false})
+				TweenMax.from(ball, 2, {y:300,  ease:Back.easeOut.config(2),  delay:twnDelay, overwrite: false});
+				TweenMax.from(ball, 2, {rotation:-360, ease:Power2.easeOut,  delay:twnDelay});
+				twnDelay+=.3;
+				TweenMax.to(lines, 	.2, {autoAlpha:1,  delay:twnDelay, overwrite: false});
+				TweenMax.fromTo(lines, 	2, {y:180}, {y:-170, ease:Power3.easeOut,  delay:twnDelay});
+				twnDelay+=.6;
+				TweenMax.delayedCall(twnDelay, killTweens, [img03]);
+				TweenMax.from(mask, 1, {y:-190,  ease:Power2.easeOut,  delay:twnDelay});
+				TweenMax.from(shield, 1, {y:190, ease:Power2.easeOut,  delay:twnDelay});
+				twnDelay+=.3;
+				TweenMax.to(shield_back, .5, {autoAlpha:1, delay:twnDelay});
+				twnDelay+=.3;
+				TweenMax.from(left_wing, .6, {autoAlpha:0, x:30, rotation:-60, ease:Power3.easeOut,  delay:twnDelay});
+				TweenMax.from(right_wing, .6, {autoAlpha:0, x:-30, rotation:60, ease:Power3.easeOut,  delay:twnDelay});
+				TweenMax.from(trofy, 1, {autoAlpha:0, x:190, y:190, ease:Power2.easeOut,  delay:twnDelay});
+				TweenMax.to(blurElement, .6, {a:0, onUpdate:applyBlur, onUpdateParams:[trofy], delay:twnDelay});			
+				twnDelay+=1;			
+				TweenMax.delayedCall(twnDelay, btnOver);
+				TweenMax.delayedCall(twnDelay, bounceObject, [img04]);	
+				TweenMax.delayedCall(twnDelay, runSparkles, [sparkle01]);
+				twnDelay+=.6;
+				TweenMax.delayedCall(twnDelay, runSparkles, [sparkle02]);
+			}
+
+			function applyBlur(mc){
+   				 TweenMax.set([mc], {webkitFilter:"blurY(" + blurElement.a + "px)", filter:"blur(" + blurElement.a + "px)"});  
+			};
+			function bounceObject(mc){
+				TweenMax.to(mc, 1, {y:5, ease:Linear.easeNone, yoyo:true, repeat:-1});
+			}
+
+			function runSparkles(mc){
+				var	twnDelay = 0;
+				TweenMax.set(mc, {autoAlpha:1, scale:1.2});
+				TweenMax.from(mc, 1, {scale:.1, autoAlpha:0,  ease:Bounce.easeOut, delay:twnDelay});
+				twnDelay+=1;
+				TweenMax.to(mc, 1, {scale:.1, autoAlpha:0,  ease:Bounce.easeIn, delay:twnDelay});
+				twnDelay+=1.5;
+				TweenMax.delayedCall(twnDelay, runSparkles, [mc]);
+			}
+			function activateRollOver(){
+				if (!isIOS) {
+					myAdLink.addEventListener("mouseover", btnOver);
+				}else{
+					myAdLink.addEventListener("touchstart", btnOver);
+				}		
+			}
+			function btnOver(){
+	    		TweenMax.fromTo(shine, 1, {x:0}, {x:230});
+			}
+			function killTweens(mc){
+				TweenMax.killTweensOf(mc);
+			}
+			var mediaReady = function ready(fn) {
+			  if (document.readyState !== "loading"){
+			    fn();
+			  } else {
+			    document.addEventListener("DOMContentLoaded", fn);
+			  }
+			};
+			mediaReady(init);
+
+		</script>
+
+	
+
+</body></html>

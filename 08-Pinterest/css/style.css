@@ -1,0 +1,600 @@
+*, body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    /* padding: 0; */
+}
+
+nav {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+}
+
+nav a {
+    padding: 10px;
+}
+
+.primer-bloque {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.segundo-bloque {
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    width: 100%;
+}
+
+.tercer-bloque {
+    /* align-items: center; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 10px; */
+    width: 18%;
+}
+
+
+.buscador {
+    align-items: flex-end;
+    background-color: #f3f0f0d8;
+    border-color: transparent;
+    border-radius: 25px;
+    padding: 12px 12px 12px 35px;
+    width: 100%;
+    /* width: 75%; */
+}
+
+.pinterest {
+    font-size: 150%;
+    color: #dd2929;
+}
+
+.inicio {
+    background-color: #000000;
+    border-radius: 25px;
+    border-width: 1px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.hoy {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.icono {
+    /* box-sizing: border-box; */
+    color: #807d7d;
+    display: inline;
+    font-size: 110%;
+    position: absolute;
+    left: 200px;
+    top: 41px;
+
+}
+
+.campana {
+    font-size: 150%;
+    color: #000000;
+}
+
+.mensaje {
+    font-size: 150%;
+    font-weight: bold;
+    color: #dd2929;
+}
+
+.tercer-bloque, .usuario {
+    font-size: 140%;
+    color: #000000;
+}
+
+.menu-desplegable {
+    font-size: 130%;
+    color: #dd2929;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* grid-auto-rows: minmax(auto, auto); */
+    column-gap: 16px;
+    row-gap: 1px;
+    padding: 0 10px;
+}
+
+
+article img {
+    /* background-color: blue; */
+    border-radius: 18px;
+
+}
+
+
+/*ESTILOS PARA PERFIL USUARIO PINTEREST */
+
+.perfil-usuario-1 {
+    align-items: center;
+    display: flex;
+    flex: row;
+    flex-wrap: nowrap;
+    font-weight: 300;
+    justify-content: flex-start;
+
+}
+
+.perfil-usuario-1 img {
+    border-radius: 50px;
+    padding: 5px;
+    width: 15%;
+
+}
+
+.perfil-usuario-2 {
+    align-items: center;
+    display: flex;
+    flex: row;
+    flex-wrap: nowrap;
+    font-weight: 300;
+    justify-content: flex-start;
+    position: relative;
+    bottom: 30%;
+}
+
+.perfil-usuario-2 img {
+    border-radius: 50px;
+    padding: 5px;
+    width: 15%;
+
+}
+
+.perfil-usuario-3 {
+    align-items: center;
+    display: flex;
+    flex: row;
+    flex-wrap: nowrap;
+    font-weight: 300;
+    justify-content: flex-start;
+    position: relative;
+    bottom: 10%;
+}
+
+.perfil-usuario-3 img {
+    border-radius: 50px;
+    padding: 5px;
+    width: 15%;
+
+}
+
+.perfil-usuario-4 {
+    align-items: center;
+    display: flex;
+    flex: row;
+    flex-wrap: nowrap;
+    font-weight: 300;
+    justify-content: flex-start;
+    position: relative;
+    top: 1%;
+}
+
+.perfil-usuario-4 img {
+    border-radius: 50px;
+    padding: 5px;
+    width: 15%;
+
+}
+
+.estado-usuario {
+    align-items: center;
+    display: flex;
+    flex: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: relative;
+    bottom: 30%;
+}
+
+/* ESTILOS  ESTADO DE USUARIO  */
+.estado-usuario i {
+    border-radius: 50px;
+    color: #000000;
+    font-size: 20px;
+    padding: 0 .5px 0 10px;
+    width: 10%;
+}
+
+.estado-usuario-2 {
+    align-items: center;
+    display: flex;
+    flex: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: relative;
+    top: 1%;
+}
+
+/* ESTILOS  ESTADO DE USUARIO  */
+.estado-usuario-2 i {
+    border-radius: 50px;
+    color: #000000;
+    font-size: 20px;
+    padding: 0 .5px 0 10px;
+    width: 10%;
+}
+
+.feliz:hover {
+    cursor: pointer;
+    color: rgb(46, 196, 46);
+}
+
+.triste:hover {
+    cursor: pointer;
+    color: rgb(224, 85, 34);
+}
+
+.igual:hover {
+    cursor: pointer;
+    color: rgba(236, 182, 82, 0.911);
+}
+
+/* ESTILOS HOVER PERFIL DE USUARIO PINTEREST */
+.perfil-usuario-1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.perfil-usuario-2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.perfil-usuario-3:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.perfil-usuario-4:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ESTILOS IMAGENES TIPO PINTEREST */
+.imagen-7, .imagen-8 {
+    position: relative;
+    bottom: 5%;
+}
+
+.imagen-9 {
+    position: relative;
+    top: 1%;
+}
+
+.imagen-10, .imagen-12, .imagen-16 {
+    position: relative;
+    bottom: 30%;
+}
+
+.imagen-11, .imagen-15, .imagen-17 {
+    position: relative;
+    top: 2%;
+}
+
+.imagen-13, .imagen-14 {
+    position: relative;
+    bottom: 10%;
+}
+
+.imagen-18 {
+    position: relative;
+    bottom: 60%;
+}
+
+/*ESTILOS CON HOVER NAVBAR */
+.primer-bloque a i:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+    border-radius: 50%;
+    /* padding: 5px 5px 5px 5px; */
+}
+
+.hoy:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+    border-radius: 50%;
+    /* padding:5px 5px 5px 5px; */
+}
+
+.buscador:hover {
+    background-color: rgb(218, 216, 216);
+}
+
+.tercer-bloque a i:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+    border-radius: 50%;
+    /* padding:5px 5px 5px 5px; */
+}
+
+/* ESTILOS DEL FOOTER */
+.pie-pagina {
+    align-items: center;
+    background-color: black;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.pie-pagina a i {
+    color: rgb(100, 29, 100);
+    font-size: 25px;
+    padding: 0 10px 0 10px;
+}
+
+/* PIE DE PAGINA HOVER */
+.pie-pagina a i:hover {
+    color: #ffff;
+}
+
+
+/* HOVER IMAGENES */
+.imagen-1:hover {
+    box-shadow: 5px 5px 5px 5px rgba(159, 161, 161, 0.822);
+}
+.imagen-2:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-3:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-4:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-5:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-6:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-7:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-8:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-9:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-10:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-11:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-12:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-13:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-14:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-15:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-16:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-17:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+.imagen-18:hover {
+    box-shadow: 5px 5px 5px 5px rgba(161, 159, 159, 0.822);
+}
+
+
+/* RESPOSIVE DESING */
+
+@media screen and (min-width: 780px) and (max-width:1024px) {
+    .icono, .hoy, .inicio, .campana {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        /* grid-auto-rows: minmax(auto, auto); */
+        column-gap: 16px;
+        row-gap: 1px;
+        padding: 0 10px;
+    }
+
+    .imagen-12 {
+        position: relative;
+        bottom: auto;
+    }
+
+    .perfil-usuario-2 {
+        position: relative;
+        bottom: auto;
+    }
+
+    .estado-usuario {
+        position: relative;
+        bottom: auto;
+    }
+
+    .imagen-18 {
+        position: relative;
+        bottom: auto;
+    }
+
+    .pie-pagina {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width:780px) {
+    .icono, .hoy, .inicio, .campana, .mensaje {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        /* grid-auto-rows: minmax(auto, auto); */
+        column-gap: 16px;
+        row-gap: 1px;
+        padding: 0 10px;
+    }
+
+    .imagen-7 {
+        position: relative;
+        bottom: auto;
+    }
+
+    .imagen-10 {
+        position: relative;
+        bottom: auto;
+    }
+
+    .imagen-12 {
+        position: relative;
+        bottom: auto;
+    }
+
+    .perfil-usuario-2 {
+        position: relative;
+        bottom: auto;
+    }
+
+    .estado-usuario {
+        position: relative;
+        bottom: auto;
+    }
+
+    .imagen-18 {
+        position: relative;
+        bottom: auto;
+    }
+
+    .pie-pagina {
+        width: 100%;
+    }
+
+    .pie-pagina .derechos {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .primer-bloque, .tercer-bloque, .icono {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    input {
+        text-align: center;
+    }
+
+    .segundo-bloque {
+        width: 70%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        column-gap: 16px;
+        row-gap: 1px;
+        padding: 0 10px;
+    }
+
+    .imagen-10 {
+        position: relative;
+        top: 10%;
+    }
+
+    .imagen-11 {
+        position: relative;
+        top: 15%;
+    }
+
+    .imagen-12 {
+        position: relative;
+        top: 35%;
+    }
+
+    .imagen-13 {
+        position: relative;
+        top: 23%;
+    }
+
+    .imagen-14 {
+        position: relative;
+        top: 50%;
+    }
+
+    .imagen-15 {
+        position: relative;
+        top: 30%;
+    }
+
+    .imagen-16 {
+        position: relative;
+        top: 30%;
+    }
+
+    .imagen-17 {
+        position: relative;
+        top: 60%;
+    }
+
+    .imagen-18 {
+        position: relative;
+        top: 30%;
+    }
+
+
+    .perfil-usuario-1, .perfil-usuario-2, .perfil-usuario-3, .perfil-usuario-4 .estado-usuario-2, .estado-usuario {
+        display: none;
+    }
+
+    .pie-pagina {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pie-pagina, .derechos, .autor {
+        display: none;
+    }
+}

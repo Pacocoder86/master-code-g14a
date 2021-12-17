@@ -5,79 +5,114 @@ body{
 }
 header{
     align-items: center;
-    background-color: #536dfe;
+    background-color: #263238;
     display: flex;
     justify-content: space-between;
-    height: 5vh;
-    padding: 0 5px;
+    height: 15vh;
+    padding: 0 2px;
+}
+img{
+    margin: 0;
+    width: 120px;
 }
 h1, nav{
     display: inline-block;
 }
 h1, nav a{
     color: #fff;
+    
 }
+i, a {
+    padding:5px ;
+}
+/* ¿cómo pegarle a los i que estan solo dentro del nav? */
 h1{
     font-size: 1.5rem;
-    margin: 0;
+
+    margin: 0 0 0 350px;
+}
+h1:hover{
+    background-color:#e65100;
+    padding: 45px 15px;
 }
 nav{
     display: flex;
     align-items: center;
-    justify-content:space-between; 
+    justify-content:space-evenly; /* space evenly, el espaio entre contenedores es el mismo*/
     width: 35%;
     /* Puedes usar las propiedades para el ejex y el y en un solo display */
 }
 nav a{
     font-size: 1rem;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 45px 20px;
 }
 nav a:hover{
-    background:#90caf9;
+    background:#e65100 ;
 }
 main{
 display: flex;
 flex-direction: row;
 }
 aside, section{
-    height: 90vh;
+    height: 75vh;
 }
 aside{
     align-items: center;
-    background-color:  #5c6bc0;
+    background-color:#e65100;
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 8%;
 }
 aside a{
-    color: #000000;
-    font-size: 1rem;
-    padding: 10px 0;
+    color: #ffffff;
+    font-size: .8rem;
+    font-weight: 700;
+    margin-top: 50px;
+    padding: 15px 0;
     text-align: center;
     text-decoration: none;
     width: 100%;
 }
 aside a:hover{
-    background-color: aqua;
+    background-color: #ff9e80;
 }
 section{
-    background-color:#e3f2fd;
+    background-color:#90a4ae;
     display: flex;
     flex-flow: row wrap;
-    width: 90%;
+
+    width: 92%;
 }
 article{
     flex: 1 1 26.66%;
+    
     text-align:start;
+    padding: 0 5px;
 }
+
+article h2{
+    font-weight: bold;
+    text-align: center;
+}
+article  h3{   
+    color: #d84315;
+    font-weight: 700;
+
+}
+
+article p{
+    color: #ffffff;
+
+}
+
 footer{
     align-items: center;
-    background-color:#536dfe;
+    background-color:#263238;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 5vh;
+    height: 10vh;
     width: 100%;
 }
 footer p, footer a{
