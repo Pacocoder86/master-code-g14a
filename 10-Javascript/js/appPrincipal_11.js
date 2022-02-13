@@ -16,7 +16,7 @@ console.log(frutaEliminada);
 
 //shift
 
-const frytas = ["sandia", "pera"];
+const frutas = ["sandia", "pera"];
 
 const frutaEliminada = frutas.shift();
 
