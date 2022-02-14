@@ -44,12 +44,12 @@ function imprimeResultados(resultados) {
   return lista;
 }
 
-[resultados];
-var [alumno1, alumno2] = resultados;
+// [resultados];
+// var [alumno1, alumno2] = resultados;
 
-console.log(resultados);
-console.log(`el alumno: ${alumno1}`);
-console.log(`el alumno: ${alumno2}`);
+// console.log(resultados);
+// console.log(`el alumno: ${alumno1}`);
+// console.log(`el alumno: ${alumno2}`);
 
 // function imprimeResultados(resultados) {
 //   var lista = "";

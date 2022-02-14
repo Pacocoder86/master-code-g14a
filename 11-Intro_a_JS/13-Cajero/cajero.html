@@ -25,7 +25,7 @@
         <input id="nombre" type="text" /><br />
         <label for="password">Contraseña</label><br />
         <input id="password" type="text" /><br /><br />
-        <label for="apertura">Monto de apertura</label><br />
+        <label for="apertura">Monto de apertura (solo se lee cuanto eres nuevo usuario)</label><br />
         <input id="apertura" type="text" /><br /><br />
         <button onclick="validaUsuario()">Ingresar</button>
       </header>
@@ -35,8 +35,11 @@
         <div>
           <h1>Cajero Automático</h1>
           <h3 id="bienvenida"></h3>
-         
-          <h5 id="operaciones" class="tamañoresultados">Op</h5>
+
+          <h5 class="tamañoresultados">
+            Saldo en cuenta
+            <span id="operaciones">0</span>
+          </h5>
           <h2 id="total">0</h2>
         </div>
 
