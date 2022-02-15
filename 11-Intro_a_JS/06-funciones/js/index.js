@@ -137,32 +137,18 @@
 
 //definir una funcion que me diga si la frase o la plarabra es un palindromo
 
-var palabra = prompt("por favor ingresa una palabra");
-var reversaNombre;
-var arrayPalabra = [];
-
-function palinDromo(palabra) {
-  arrayPalabra.push(palabra);
-  reversaNombre = arrayPalabra.reverse();
-}
-var resultado = palinDromo(reversaNombre);
-console.log("la palabra " + "es" + resultado);
-
-/*
-
-
-
-*/
-
 var texto;
+var resultado;
 
-texto = prompt("Ingrese una oracion ");
+texto = prompt("ingrese una cadena de texto");
 
-function palindromo(texto) {
-  var cadenaPrincipal = texto.toLowerCase().toUppercase();
+function palindromo(Texto) {
+  var cadenaPrincipal = Texto.toLowerCase().toUpperCase();
 
+  // Convertir la cadena en un array
   var letrasEspacios = cadenaPrincipal.split("");
 
+  // Eliminar los espacios en blanco )
   var cadenaSinEspacios = "";
   for (i in letrasEspacios) {
     if (letrasEspacios[i] != " ") {
@@ -170,25 +156,33 @@ function palindromo(texto) {
     }
   }
 
-  var letras = cadenaSinEspacios;
-  var reverse = cadenaSinEspacio.split("").reverse("");
+  var letras = cadenaSinEspacios.split("");
+  var reverse = cadenaSinEspacios.split("").reverse();
 
   var igual = true;
-
   for (i in letras) {
     if (letras[i] == reverse[i]) {
     } else {
+      // Alguna letra es distinta, por lo que ya no es un palindromo
       igual = false;
     }
   }
 
   if (igual) {
-    resultado += "Es un palindromo";
+    resultado += " es un palíndromo";
   } else {
-    resultado += "No es un palindromo";
+    resultado += " no es un palíndromo";
   }
 
   return resultado;
 }
+resultado = "La cadena que ingresaste: ";
 
-alert(palindromo());
+alert(palindromo(texto));
+
+function multiplicar() {
+  for (i = 1; i <= 10; i++) {
+    console.log("2 * " + i + " " + "=" + " " + 2 * i);
+  }
+}
+multiplicar();
