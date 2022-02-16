@@ -1,13 +1,21 @@
 let cuentas = [];
-let numero, operador, saldoInicial, nombreUsuario, password1, saldoEnCuenta;
+let numero,
+  operador,
+  saldoInicial,
+  nombreUsuario,
+  password1,
+  saldoEnCuenta,
+  userExists,
+  correctPassword,
+  total;
 
 function validaUsuario() {
   nombreUsuario = document.getElementById("nombre").value;
   password1 = document.getElementById("password").value;
   saldoInicial = document.getElementById("apertura").value;
 
-  let userExists = false;
-  let correctPassword = false;
+  userExists = false;
+  correctPassword = false;
   saldoEnCuenta = 0;
 
   for (i = 0; i < cuentas.length; i++) {
@@ -81,7 +89,7 @@ function CapturarDatos(id) {
   let saldoFinal = document.getElementById("total1");
   let montoInicial = document.getElementById("montoApertura");
   let array = [];
-  let total;
+  total;
 
   if (id === "+" || id === "-") {
     // montoInicial.innerText = saldoInicial;
@@ -96,7 +104,13 @@ function CapturarDatos(id) {
     operaciones.innerText = "0";
     saldoFinal.innerText = "$";
     montoInicial.innerText = "$";
-    total = cuentas[i].saldo; // ojo vaidar el saldo incial cunado cuando vuelve a inciar sesion.
+
+    for (i = 0; i < cuentas.length; i++) {
+      if (cuentas[i].nombre == nombreUsuario) {
+        userExists = true;
+        cuentas[i].saldo = total;
+      }
+    }
   } else if (id === "=") {
     // operaciones.innerText = confirm('¿Quieres confirmar esta operación?')
     document.getElementById("bienvenida").innerText =
