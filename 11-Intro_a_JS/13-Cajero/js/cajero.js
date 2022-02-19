@@ -122,7 +122,7 @@ function CapturarDatos(id) {
     total = Calculo(array);
     imprimirTotal.innerText = "$" + " " + total;
     saldoFinal.innerText = "$" + " " + total;
-    montoInicial.innerHTML = "";
+    montoInicial.innerHTML = total;
   } else if (id === "c") {
     imprimirTotal.innerText = "0";
     operaciones.innerText = "0";
